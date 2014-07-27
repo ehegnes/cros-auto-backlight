@@ -1,0 +1,12 @@
+set title "Auto Backlight Calibration"
+set xlabel "ALS Reading"
+set ylabel "Backlight Brightness"
+
+f(x) = m*x + b
+fit f(x) "./bl.dat" using 1:2 via m,b
+fit_eq = sprintf("Fit Eq: %.4fx+%.2f", m, b)
+
+plot "./bl.dat" using 1:2 title "Raw Data", \
+f(x) title fit_eq
+set print "./blsettings.dat"
+print m,b
