@@ -1,7 +1,7 @@
 # cros-auto-backlight: Chromebook C720 Automatic Brightness
 This project concerns a collection of Bash scripts I have written/modified and used to prepare
 and utilize custom brightness scaling on my Acer C720P. Preferred brightness levels are stored
-with the corresponding ALS (Ambient Light Sensor) IR reading, and the data is fit by an
+with the corresponding ALS (Ambient Light Sensor) IR reading, and the data is fit by a
 linear equation to be used when determining the automatic brightness level. Right now this is
 really young, and I am not quite sure where I want it to end up, but I think this could be the
 base for an *actually* useful automatic backlight daemon. =)
