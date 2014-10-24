@@ -27,7 +27,7 @@ your brightness first) whenever it pops into your mind to populate the data
 over time, removing outliers whenever necessary.
 
 When you run `gnuplot bl.gpi`, the slope and y-intercept of your
-brightness fit will be stored in `blsettings.dat`, which is then read by
+brightness fit will be stored in `blsettings`, which is then sourced by
 `backlight`. Use the `--persist` flag to view the visualization.
 
 _Note_: You may have to manually remove outliers. Simply delete the offending
