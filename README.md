@@ -28,7 +28,7 @@ over time, removing outliers whenever necessary.
 
 When you run `gnuplot bl.gpi`, the slope and y-intercept of your
 brightness fit will be stored in `blsettings`, which is then sourced by
-`backlight`. Use the `--persist` flag to view the visualization.
+`backlightd`. Use the `--persist` flag to view the visualization.
 
 _Note_: You may have to manually remove outliers. Simply delete the offending
 line(s) in `bl.dat`.
@@ -39,7 +39,7 @@ No _installation_ for now, just some scripts.
 1. Store values: `blstore` (meant to populate bl.dat with sensor values)
 2. Store linear fit coefficients and [render visualization]: `gnuplot
    [--persist] bl.gpi`
-3. Enjoy reasonable backlight levels: `backlight &`
+3. Enjoy reasonable backlight levels: `backlightd &`
 
 ## Future Work
 - General clean-up
