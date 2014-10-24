@@ -12,8 +12,7 @@ LIGHT_ARRAY=(100 100 100 100)
 POLLING_RATE="1"
 
 # Fitted function constants for auto-brightness
-M="$(cut -d' ' -f1 ./blsettings.dat)"
-B="$(cut -d' ' -f2 ./blsettings.dat)"
+source "./blsettings"
 
 # updates the ALS (ambient light sensor) data array
 ambient_light() {
